@@ -1,4 +1,34 @@
-
-<div>
-  {{> button info=text}}
+{{! Імпортуємо product компонент. }}
+<div class='user-info'>
+  {{> user-info
+    name = user.name
+    email = user.email
+    phone = user.phone
+    balance = user.balance
+  }}
 </div>
+
+{{!-- <div>
+  {{> product
+  title = product.name
+  price = product.cost
+  img = product.img
+  name = product.name
+  isAvailable = product.isAvailable
+  }}
+</div> --}}
+
+{{!-- <div>
+  {{> userinfo
+    name = user.name
+    email = user.email
+    phone = user.phone    
+  }}  
+</div> --}}
+
+{{!-- {{> product
+  title = product.name
+  price = product.cost
+  img = product.img
+  name = product.name
+}} --}}

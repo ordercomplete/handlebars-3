@@ -1,0 +1,37 @@
+<!-- src/component/product.hbs -->
+
+<div>
+<p>{{title}}</p>
+<span>{{price}}<span>
+<img src="{{img}}" alt="{{name}}">
+{{#unless isAvailable}}
+<button>Немає в наявності</button>
+{{/unless}}
+</div>
+
+{{!-- <div>
+  <p>{{title}}</p>
+  <span>{{price}}<span>
+  <img src="{{img}}" alt="{{name}}">
+  {{#if isAvailable}}
+  <button>Купити</button>
+  {{else}}
+  <button>Немає в наявності</button>
+  {{/if}}
+</div> --}}
+
+{{!-- <div>
+<p>{{title}}</p>
+<span>{{price}}<span>
+<img src="{{img}}" alt="{{name}}">
+{{#if isAvailable}}
+<button>Купити</button>
+{{/if}}
+</div> --}}
+
+{{!-- <div>
+  <button>Купити</button>
+  <p>{{title}}</p>
+  <span>{{price}}</span>
+  <img src='{{img}}' alt='{{name}}' />
+</div> --}}
